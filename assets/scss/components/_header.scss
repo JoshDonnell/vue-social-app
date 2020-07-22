@@ -1,0 +1,39 @@
+/* ============================================================
+	* Components - Header
+============================================================ */
+
+/**
+ * The styling for the page header which sits at the top
+ * of the website.
+*/
+
+.c-header {
+	width: 100%;
+	z-index: 399;
+	
+
+	&__logo { width: 180px; }
+	
+
+	.c-menu {
+		display: none;
+		
+		@include by-device(ipad-pro) {
+			display: inline-block;
+		}
+
+	}
+	
+
+	&__menu-trigger {
+		
+		i { color: $white; }
+
+
+		@include by-device(ipad-pro) {
+			display: none;
+		}
+
+	}
+	
+}

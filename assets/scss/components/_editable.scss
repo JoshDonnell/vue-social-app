@@ -1,0 +1,230 @@
+/* ============================================================
+	* Components - Editable
+============================================================ */
+
+/**
+ * The styling for any editable contet on a CMS site, the idea
+ * being to wrap any wysiwyg content sections with the 
+ * "c-editable" class then we can predefine styles this way 
+ * we do not rely on a default for the whole site.
+*/
+
+.c-editable {
+	
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: $spacing-base;
+		color: $colour-primary;
+		font-family: $font-family-primary;
+		font-weight: $heading-weight;
+	}
+
+
+	h1 {
+		margin-top: $spacing-base;
+		margin-bottom: $spacing-base;
+		font-size: $font-size-heading-three;
+		line-height: $font-size-heading-three + $font-line-height;
+
+		@include by-device(ipad) {
+			margin-top: $spacing-2x;
+			margin-bottom: $spacing-2x;
+			font-size: $font-size-heading-two;
+			line-height: $font-size-heading-two + $font-line-height;
+		}
+
+		@include by-device(ipad-pro) {
+			font-size: $font-size-heading-one;
+			line-height: $font-size-heading-one + $font-line-height;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+	}
+
+	
+	h2 + p { margin-top: 0; }
+
+
+	h2 {
+		margin-top: ($spacing-base + $spacing-half);
+		margin-bottom: $spacing-base;
+		font-size: $font-size-heading-three;
+		line-height: $font-size-heading-three + $font-line-height;
+
+		&:first-child { margin-top: 0; }
+
+		&:last-child { margin-bottom: 0; }
+
+		@include by-device(ipad-pro) {
+			font-size: $font-size-heading-two;
+			line-height: $font-size-heading-two + $font-line-height;
+		}
+
+	}
+	
+
+	h2 + h4 { margin-top: 0; }
+
+
+	h3 {
+		margin-top: $spacing-base;
+		margin-bottom: $spacing-base - $spacing-quarter;
+		font-size: $font-size-heading-four;
+		line-height: $font-size-heading-four + $font-line-height;
+		
+		@include by-device(ipad-pro) {
+			font-size: $font-size-heading-three;
+			line-height: $font-size-heading-three + $font-line-height;
+		}
+
+		&:first-child { margin-top: 0; }
+
+		&:last-child { margin-bottom: 0; }
+
+	}
+
+
+	h3 + p { margin-top: 0; }
+	
+
+	h4 {
+		margin-top: $spacing-base;
+		margin-bottom: $spacing-base;
+		font-size: $font-size-heading-four;
+		line-height: $font-size-heading-four + $font-line-height;
+
+		&:first-child { margin-top: 0; }
+
+		&:last-child { margin-bottom: 0; }
+
+	}
+
+
+	h4 + p { margin-top: 0; }
+
+
+	h5 {
+		margin-top: $spacing-half;
+		margin-bottom: $spacing-half;
+		font-size: $font-size-heading-five;
+		line-height: $font-size-heading-five + $font-line-height;
+
+		&:first-child { margin-top: 0; }
+
+		&:last-child { margin-bottom: 0; }
+
+	}
+
+
+	h6 {
+		font-size: $font-size-heading-six;
+		line-height: $font-size-heading-six + $font-line-height;
+		
+		&:first-child { margin-top: 0; }
+
+		&:last-child { margin-bottom: 0; }
+
+	}
+
+	p {
+		display: block;
+		margin: $spacing-base 0;
+		color: $black;
+
+		&:last-child { margin-bottom: 0; }
+
+		&:first-child { margin-top: 0; }
+
+	}
+
+
+	a {
+		font-weight: $font-regular;
+		color: $colour-primary;
+		@include transition(color);
+	}
+
+
+	ul li,
+	ol li {
+		list-style-position: outside;
+		color: $black;
+		line-height: $font-size-body + $font-line-height;
+	}
+
+
+	ul,ol {
+		padding: 0;
+	}
+
+
+	blockquote {
+		display: inline-block;
+		margin: $spacing-base 0;
+		border-left: 2px solid $colour-primary;
+		padding-left: $spacing-base;
+
+		&:first-child { margin-top: 0; }
+		
+		p {
+			font-size: $font-size-heading-five;
+			line-height: $font-size-heading-five + $font-line-height;
+			margin: 0;
+			display: inline-block;
+			margin-top: $spacing-half;
+		}
+
+	}
+
+	
+	hr {
+		margin: ($spacing-base + $spacing-half) 0;
+		border-color: $colour-primary;
+	}
+
+
+	img {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		padding: $spacing-2x 0;
+
+		&:first { padding-top: 0; }
+	}
+
+
+	img + img { padding-bottom: 0; }
+
+
+	strong { font-weight: $font-bold; }
+
+
+	table {
+		border-collapse: collapse;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+	}
+
+	th, td {
+		padding: 10px;
+	}
+
+}
+
+
+
+
+
+/* ============================================================
+    * Editable White
+============================================================ */
+
+.c-editable--white {
+
+	h1,h2,h3,h4,h5,h6,p, li, strong { color: $white; }
+
+}

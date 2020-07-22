@@ -1,0 +1,20 @@
+/* ============================================================
+    * Components - Filters
+============================================================ */
+
+/**
+ * Filter styles, style the selects in here.
+*/
+
+.c-filters {
+
+    &__item {
+        width: 100%;
+
+        @include by-device(ipad) {
+            max-width: 300px;
+        }
+        
+    }
+
+}

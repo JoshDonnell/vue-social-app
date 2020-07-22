@@ -1,0 +1,20 @@
+/* ============================================================
+    * Components - Card
+============================================================ */
+
+/**
+ * Global style that is used to style case studies and news 
+ * blocks for example.
+*/
+
+.c-card {
+    position: relative;
+
+    .c-card__inner {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba($black, 0.25);
+        @include aspect-ratio(1,1);
+    }
+}

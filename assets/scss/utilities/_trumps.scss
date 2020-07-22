@@ -1,0 +1,58 @@
+/* ============================================================
+	* Utilities - Trumps
+============================================================ */
+
+/**
+ * A trumps files where overiding styling is placed,
+ * this is the only place in a project that a !important
+ * should be used !
+*/
+
+.js-testimonial-slider-arrows {
+
+	&.white {
+		i { color: $white; }
+	}
+
+}
+
+
+.slick-arrow {
+	@include transition(opacity);
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+	
+
+	&.slick-disabled {
+		opacity: .4;
+		cursor: not-allowed;
+	}
+	
+
+	i { 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 24px;
+		width: 24px;
+	}
+
+}
+
+
+.slick-dotted.slick-slider { margin-bottom: 0 !important; }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-active {
+	position: relative;
+  display: block;
+  opacity: 0;
+}

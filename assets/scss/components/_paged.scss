@@ -1,0 +1,41 @@
+/* ============================================================
+    * Components - Paged / Pagination
+============================================================ */
+
+/**
+ * The pagination styles to be used acrros all pagination
+ * sections. For exaple on news, case studies etc..
+*/
+
+.c-paged {
+
+	ul {
+		color: $colour-primary;
+
+		li {
+            list-style: none;
+            margin-left: 0;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+		}
+
+    }
+
+    
+    &__link {
+        width: 40px;
+        height: 40px;
+        font-weight: $font-medium;
+        color: $white;
+        background-color: $colour-primary;
+        text-decoration: none;
+        display: inline-block;
+
+        i { margin-bottom: 2px; }
+
+    }
+
+}

@@ -1,0 +1,60 @@
+/* ============================================================
+    * Elements - Slick Dots
+============================================================ */
+
+/**
+ * Style for the slick dots
+*/
+
+.e-dots {
+    position: absolute;
+    left: 50%;
+    bottom: $spacing-2x;
+    transform: translateX(-50%);
+        
+
+    @include by-device(ipad) {
+        bottom: $spacing-3x;
+    }
+    
+
+    @include by-device(ipad-pro) {
+        bottom: $spacing-5x;
+    }
+
+
+    .slick-dots {
+        position: static;
+        text-align: left;
+        
+
+        li button:before { display: none; }
+            
+
+        li {
+            @include transition(background-color);
+            border: 2px solid $white;
+            margin: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-right: $spacing-half;
+            
+
+            &.slick-active {
+                background-color: $white;
+
+                &:hover { background-color: rgba($white, 1); }
+
+            }
+
+
+            &:hover { background-color: rgba($white, .6); }
+
+            &:last-of-type { border-right: 2px solid $white; }
+
+        }
+
+    }
+
+}

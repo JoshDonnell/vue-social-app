@@ -1,0 +1,18 @@
+/* ============================================================
+    * Components - Menu
+============================================================ */
+
+/**
+ * Global menu styling across the project, includes multiple
+ * varitaions for diffirent locations.
+*/
+
+.c-menu {
+
+	&__item {
+
+		&:first-of-type { margin-left: 0; }
+
+	}
+
+}

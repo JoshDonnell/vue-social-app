@@ -1,0 +1,144 @@
+/* ============================================================
+    * YOUR PROJECT NAME Overriding  Settings
+============================================================ */
+/**
+ * Here we have our project overriding settings,
+ * Here is a starter to get you started you can find all
+ * the properties over at:
+ *
+ * https://bit.ly/373KjPW
+ *
+ * Replace YOUR PROJECT NAME with YOUR PROJECT NAME.
+*/
+
+
+/* YOUR PROJECT NAME Colours
+*
+*  This is where all of the project colours are set up,
+*  we have a simple process to follow for generating the 
+*  colours. The first step is to go to the following url:
+*  https://colordesigner.io/what-color-is-this
+*
+*  Before we enter our hex codes we need to chnage the list
+*  type be NTC.
+*
+*  Once we have done this we can get out colour names
+*  from this website, just enter the hex code of your
+*  colour and it will return a name such as Milano Red.
+*
+*  Now we have this name we will create a new variable
+*  with this name in the section below .For example we
+*  would create: $milano-red: #C11010;
+*
+*  Then we will set the two most commonly used colours to be 
+*  primary and secondary colours for example:
+*  $colour-primary: $milano-red;
+*  $colour-secondary: $ultramarine;
+============================================================ */
+
+$black: #3C3C3B;
+$white: #ffffff;
+$grey: #efefef;
+$grey-light: #e1e1e1;
+$colour-primary: $black;
+$colour-secondary: $grey-light;
+$page-background-colour: $white;
+
+
+
+
+
+/* YOUR PROJECT NAME Font Families
+============================================================ */
+
+$font-family-primary: aktiv-grotesk, sans-serif;
+
+
+
+
+
+/* YOUR PROJECT NAME Font Weights
+============================================================ */
+
+$heading-weight: $font-bold;
+
+
+
+
+
+/* YOUR PROJECT NAME Font Sizes
+============================================================ */
+
+$font-size-heading-one: 80px;
+$font-size-heading-two: 50px;
+$font-size-heading-three: 36px;
+$font-size-heading-four: 30px;
+$font-size-heading-five: 22px;
+$font-size-heading-six: 16px;
+
+$line-height-heading-one: 80px;
+$line-height-heading-two: 50px;
+$line-height-heading-three: 36px;
+$line-height-heading-four: 30px;
+$line-height-heading-five: 22px;
+$line-height-heading-six: 16px;
+
+$font-size-body: 16px;
+$font-size-small: 13px;
+
+
+
+
+
+/* YOUR PROJECT NAME Row Sizing
+============================================================ */
+
+$rows: (
+    default: (
+        iphone-small: $spacing-2x,
+        ipad: $spacing-3x,
+        ipad-pro: $spacing-5x,
+    ),
+    small: (
+        iphone-small: $spacing-base,
+        ipad: $spacing-3x
+    ),
+    none: (
+        iphone-small: 0px
+    )
+);
+
+
+
+
+
+/* YOUR PROJECT NAME Grid
+============================================================ */
+
+$gutters: (
+    gutter: $spacing-base,
+    small: $spacing-half,
+    gutter-large: $spacing-2x,
+    0: 0,
+);
+
+$grid-widths: 1, 2, 3, 4, 5, 12;
+
+
+
+
+
+/* YOUR PROJECT NAME Border Radius
+============================================================ */
+
+$border-radius: 0;
+
+
+
+
+
+/* YOUR PROJECT NAME Buttons
+============================================================ */
+
+$button-weight: $font-bold;
+$button-spacing: ($spacing-half + $spacing-quarter) $spacing-base;

@@ -1,0 +1,146 @@
+/* ============================================================
+	* YOUR PROJECT NAME Styles
+============================================================ */
+
+/**
+ * All the sytles for YOUR PROJECT NAME using
+ * moleqular helpers and settings. Written in SCCS
+ * and using Mix to compile the styles.
+ *
+ * TO COMPILE RUN:
+ * npm install ( This will install the dependencies )
+ * npm run watch ( This will watch for any changes we make )
+ *
+ * SETTING UP STYLES
+ * 1. Globaly find and replace YOUR PROJECT NAME with your 
+ *    project name. ( In the future this will be automated )
+ *    
+ * 2. Setup any variables that need to be overwitten in your
+ *    settings files, you can find a list of all the avaiable
+ *    variables at: https://bit.ly/373KjPW
+ *
+ * 3. Compile your styles and enjoy :)
+ *
+ * USEFUL LINKS
+ * Moleqular - https://bit.ly/2CH32mu
+ * BEM - http://getbem.com/
+ * Flex - https://bit.ly/371Comp
+ */
+
+/**
+ * CONTENTS TABLE
+ *
+ * SETTINGS
+ * Settings...............Overidding settings and configuration variables.
+ *
+ * ELEMENTS
+ * Forms..................Ninja Form Styles.
+ *
+ * COMPONENTS
+ * Editable...............Wizzywig styles for WP.
+ * Header.................Site header styles.
+ * Footer.................Site Footer styles.
+ * Menu...................Menu variations styles.
+ * Banner.................Banner / Hero styles.
+ * Card...................Card block styles including coloured and style
+ * 						  variations.
+ * Filters................Filter selects styles for selectric.
+ * Paged..................Pagination stlyes. 						  
+ * Accordion..............Dropwdown accordion styles. 						  
+ *
+ * UTILITIES
+ * Trumps.................Any !import or heavy overrides.
+ */
+
+
+/* Settings
+============================================================ */
+
+@import '~@moleqular/moleqular/moleqular';
+@import 'settings';
+
+
+
+
+
+/* Generic
+============================================================ */
+
+@include moleqular-sanitize();
+
+
+
+
+
+/* Packages ( NPM, Bower, etc... )
+============================================================ */
+
+// @import '~slick-carousel/slick/slick.scss';
+// @import '~slick-carousel/slick/slick-theme.scss';
+// @import '~jquery-selectric/src/selectric';
+
+
+
+
+
+/* Base
+============================================================ */
+
+@include moleqular-base-page();
+@include moleqular-base-text();
+@include moleqular-base-links();
+@include moleqular-base-image();
+@include moleqular-base-inputs();
+@include moleqular-base-lists();
+
+
+
+
+
+/* Objects
+============================================================ */
+
+@include moleqular-row();
+@include moleqular-container();
+@include moleqular-layout();
+@include moleqular-list-bare();
+
+
+
+
+
+/* Elements
+============================================================ */
+
+@include moleqular-button();
+@include moleqular-headings();
+@import 'elements/form';
+@import 'elements/btn';
+
+
+
+
+/* Components
+============================================================ */
+
+@import 'components/editable';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/menu';
+@import 'components/banner';
+@import 'components/card';
+@import 'components/filters';
+@import 'components/paged';
+@import 'components/accordion';
+
+
+
+
+
+/* Utilities
+============================================================ */
+@include moleqular-widths();
+@include moleqular-spacing();
+@include moleqular-flex();
+@include moleqular-helpers();
+@import 'utilities/trumps';
